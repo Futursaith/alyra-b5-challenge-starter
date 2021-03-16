@@ -52,40 +52,32 @@
     </nav>
   </div>
   <div class="container">
-    <div class="row">
-      <main class="container-contact col-lg-9 shadow">
-
-        <img src="/images/big_image_1.jpg">
-        <h1 class="text-center">Contact US</h1>
-        <p class="text-center">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+    <div class="row mt-3">
+      <main class="container-contact col-lg-9 shadow p-5">
+        <img class="img-fluid p-4" src="/images/big_image_1.jpg">
+        <h1 class="text-center">Contact Us</h1>
+        <p class="text-center lead mb-5">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus
           mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada
           magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris
           condimentum nibh, ut fermentum massa justo sit amet risus.
         </p>
         <form>
-          <label for="name" class="form-label">Name*</label>
-          <input type="name" class="form-control" id="name" aria-describedby="name">
+          <label for="name" class="form-label mb-0">Name*</label>
+          <input type="name" class="form-control p-2" id="name" aria-describedby="name">
+          <label for="phone" class="form-label mt-3 mb-0">Phone</label>
+          <input type="phone" class="form-control p-2" id="phone" aria-describedby="PhoneNumber">
+          <label for="email" class="form-label mt-3 mb-0">Email*</label>
+          <input type="email" class="form-control p-2" id="email" aria-describedby="email">
+          <div class="mb-3">
+            <label for="textArea" class="form-label mt-3 mb-0">Write Message</label>
+            <textarea class="form-control p-5" id="textArea" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Send Message</button>
+        </form>
+      </main>
+      <aside class="col-lg-3"></aside>
     </div>
-  </div>
-  <label for="phone" class="form-label">Phone</label>
-  <input type="phone" class="form-control" id="phone" aria-describedby="PhoneNumber">
-  </div>
-  </div>
-  <label for="email" class="form-label">Email*</label>
-  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-  </div>
-  </div>
-  <div class="">
-    <div class="mb-3">
-      <label for="textArea" class="form-label">Write Message</label>
-      <textarea class="form-control" id="textArea" rows="3"></textarea>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Send Message</button>
-  </form>
-  </main>
-  <aside class="col-lg-3"></aside>
-  </div>
   </div>
   <footer class="p-4 text-white text-center fw-light">
     &copy; 2020 Made with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
