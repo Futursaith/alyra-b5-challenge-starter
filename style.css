@@ -1,0 +1,107 @@
+:root {
+  --dark: #212121;
+  --grey: #6c757d;
+  --light: #f8f9fa;
+  --montserrat : 'Montserrat', Arial, sans-serif;
+  --baskerville: 'Libre Baskerville', Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var( --montserrat);
+}
+
+/* header */
+
+header h1 {
+  font-family: var(--baskerville)
+}
+
+header a {
+  color :var(--dark);
+}
+
+/* Navigation */
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 4px 10px;
+  color: var(--grey);
+}
+
+header a:hover,
+nav a:hover, 
+nav .active {
+  color: var(--dark);
+}
+
+.navbar-container {
+  padding: 5px 0;
+}
+
+/* footer */
+
+footer {
+  background-color: #363b41;
+}
+
+/* main */
+
+}
+
+/* css Diégo */
+
+.carousel {
+
+}
+
+/* css Joé */
+
+.container-article {
+
+}
+
+/* css Carlos */
+
+.container-contact h1{
+ font-family: var( --baskerville);
+
+}
+
+
+
+
+/* css Ricardo */
+
+main {
+  min-height: 20vh;
+  /*background: orange;*/
+}
+
+aside {
+  min-height: 20vh;
+ 
+}
+
+.search-group .input-group-append .btn-outline-secondary{
+    border: 1px solid #ced4da;
+        border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card_bio .card-title {
+    font-family: var(--baskerville)
+}
