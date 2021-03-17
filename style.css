@@ -16,18 +16,23 @@ html {
   box-sizing: inherit;
 }
 
+
+hr {
+  margin: 0.5rem 0;
+}
+
+a,
+a:hover{
+  color :var(--dark);
+  text-decoration: none;
+}
+
+.font-baskerville {
+ font-family: var(--baskerville)
+}
+
 body {
   font-family: var( --montserrat);
-}
-
-/* header */
-
-header h1 {
-  font-family: var(--baskerville)
-}
-
-header a {
-  color :var(--dark);
 }
 
 /* Navigation */
@@ -37,7 +42,6 @@ nav li {
 }
 
 nav a {
-  text-decoration: none;
   padding: 4px 10px;
   color: var(--grey);
 }
@@ -60,48 +64,78 @@ footer {
 
 /* main */
 
-}
 
 /* css Diégo */
 
-.carousel {
+.carousel .carousel-indicators {
+    bottom: 20px;
+}
 
+.card_travel .card_body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .card_travel .card_body p {
+    padding-top: 0;
+  }
 }
 
 /* css Joé */
 
-.container-article {
 
+.card-person {
+  width: 16%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-body > .details > p {
+  color: var(--grey);
+  text-transform: bold;
+  font-size: 0.8rem;
+}
+
+.card-body > .details {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* css Carlos */
 
-.container-contact h1{
- font-family: var( --baskerville);
+.container-contact {
 
 }
 
 
+/* -------- css Ricardo ---------- */
 
 
-/* css Ricardo */
+/* --- card ---- */
 
-main {
-  min-height: 20vh;
-  /*background: orange;*/
+.card-title {
+  font-family: var(--baskerville)
 }
 
-aside {
-  min-height: 20vh;
- 
+.card-popularPost .card-text > p {
+ font-size: 0.8rem;
 }
+
+/* --- search aside ---- */
 
 .search-group .input-group-append .btn-outline-secondary{
-    border: 1px solid #ced4da;
-        border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  border: 1px solid #ced4da;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.card_bio .card-title {
-    font-family: var(--baskerville)
+/* --- social aside ---- */
+
+.social_section ul li {
+padding: 0 5px ;
 }
